@@ -1,0 +1,45 @@
+.innerbox{
+    display:flex;
+    justify-content: center;  
+    padding: 10px;
+}
+
+.one{
+    background-color: aquamarine;
+    border-radius:10px 10px 0px 0px;
+}
+
+.two{
+    background-color: #c4c4c4;
+    border-radius:0px 0px 10px 10px;
+}
+
+.infobox{
+    text-align:center;
+}
+
+#stats{
+    display: flex;
+}
+
+.button{
+    text-align: center;
+    background-color: #70c770;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:active {
+    transform: translateY(4px);
+  }
+
+#posts, #following{
+    border-right: black solid 1px;
+}
+
+#posts, #following, #followers{
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+}

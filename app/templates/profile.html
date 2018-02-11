@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="container">
+        <div class="innerbox one">
+            <div class="infobox">
+                <img src="{{url_for('static', filename='img/avatar.png')}}" alt="profilepic" width="200px">
+                <h1>{{fullname}}</h1>
+                <p>@{{username}}</p>
+                <p>{{location}}</p>
+                <p>{{datejoined}}</p>
+            </div>
+        </div>
+        <div class="innerbox two">
+                <div class="infobox">
+                <div id="bio">
+                    <p>{{bio}}</p>
+                </div>
+                <div id="stats">
+                    <div id="posts">
+                        <p>{{posts}}</p>
+                        <p>posts</p>
+                    </div>
+                    <div id="following">
+                        <p>{{following}}</p>
+                        <p>following</p>
+                    </div>
+                    <div id="followers">
+                        <p>{{followers}}</p>
+                        <p>followers</p>
+                    </div>
+                </div>
+                <div id="button">
+                    <div class="button">Follow</div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
